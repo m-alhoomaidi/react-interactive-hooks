@@ -1,6 +1,5 @@
 import { useEventHandler } from "./hooks/useEventHandler";
 
-
 export const useOnClick = () => {
     return useEventHandler('click');
 };
