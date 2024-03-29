@@ -1,6 +1,6 @@
 {
   "name": "react-interactive-hooks",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/bundle.cjs.js",
   "module": "dist/bundle.esm.js",
   "types": "dist/index.d.ts",
@@ -9,6 +9,9 @@
   "peerDependencies": {
     "react": "^17.0.0 || ^18.0.0"
   },
+  "files": [
+    "src"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/m-alhoomaidi/react-interactive-hooks.git"
@@ -28,9 +31,14 @@
   ],
   "author": "Mohammed Al homaidi",
   "dependencies": {
-    "react": "^17.0.0 || ^18.0.0"
+    "@types/node": "^20.11.30",
+    "dts-gen": "^0.10.1",
+    "react": "^17.0.0 || ^18.0.0",
+    "tslib": "^2.6.2"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.24.3",
+    "@babel/preset-react": "^7.24.1",
     "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-commonjs": "^25.0.7",
     "@rollup/plugin-node-resolve": "^15.2.3",
@@ -52,5 +60,4 @@
     "url": "https://github.com/m-alhoomaidi/react-interactive-hooks/issues"
   },
   "homepage": "https://github.com/m-alhoomaidi/react-interactive-hooks#readme"
-
 }
