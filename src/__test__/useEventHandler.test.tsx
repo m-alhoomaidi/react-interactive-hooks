@@ -1,6 +1,6 @@
 import { render, fireEvent } from '@testing-library/react';
 import React, { useEffect } from 'react';
-import { useOnClick } from '../hooks/useOnClick';
+import { useOnClick } from '..';
 
 describe('useOnClick', () => {
   test('it triggers the callback on click', () => {
