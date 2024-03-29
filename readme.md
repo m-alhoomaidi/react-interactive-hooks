@@ -114,7 +114,7 @@ function CustomEventComponent() {
 ## Contributing
 
 Contributions are welcome! Please refer to the
-[contributing guidelines](https://github.com/m-alhoomaidi/react-interactive-hooks/CONTRIBUTING.md)
+[contributing guidelines](https://github.com/m-alhoomaidi/react-interactive-hooks/blob/main/CONTRIBUTING.md)
 for more information.
 
 ## Reporting Issues
