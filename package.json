@@ -1,0 +1,56 @@
+{
+  "name": "react-interactive-hooks",
+  "version": "1.0.0",
+  "main": "dist/bundle.cjs.js",
+  "module": "dist/bundle.esm.js",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "description": "A collection of custom React hooks for event handling and activity detection.",
+  "peerDependencies": {
+    "react": "^17.0.0 || ^18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m-alhoomaidi/react-interactive-hooks.git"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "watch": "rollup -c -w"
+  },
+  "keywords": [
+    "react-interactive-hooks",
+    "debounce",
+    "threttle",
+    "react",
+    "react-hooks",
+    "interactive-hooks",
+    "interactive"
+  ],
+  "author": "Mohammed Al homaidi",
+  "dependencies": {
+    "react": "^17.0.0 || ^18.0.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@testing-library/jest-dom": "^6.4.2",
+    "@testing-library/react": "^14.2.2",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/jest": "^29.5.12",
+    "@types/react": "^18.2.73",
+    "@types/testing-library__react": "^10.2.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "rollup": "^2.79.1",
+    "rollup-plugin-terser": "^7.0.2",
+    "ts-jest": "^29.1.2",
+    "typescript": "^5.4.3"
+  },
+  "bugs": {
+    "url": "https://github.com/m-alhoomaidi/react-interactive-hooks/issues"
+  },
+  "homepage": "https://github.com/m-alhoomaidi/react-interactive-hooks#readme"
+
+}
