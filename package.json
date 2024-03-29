@@ -1,6 +1,6 @@
 {
   "name": "react-interactive-hooks",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "dist/bundle.cjs.js",
   "module": "dist/bundle.esm.js",
   "types": "dist/index.d.ts",
@@ -10,11 +10,12 @@
     "react": "^17.0.0 || ^18.0.0"
   },
   "files": [
+    "dist",   
     "src"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/m-alhoomaidi/react-interactive-hooks.git"
+    "url": "https://github.com/m-alhoomaidi/react-interactive-hooks.git"
   },
   "scripts": {
     "build": "rollup -c",
@@ -23,7 +24,7 @@
   "keywords": [
     "react-interactive-hooks",
     "debounce",
-    "threttle",
+    "throttle", 
     "react",
     "react-hooks",
     "interactive-hooks",
@@ -31,10 +32,7 @@
   ],
   "author": "Mohammed Al homaidi",
   "dependencies": {
-    "@types/node": "^20.11.30",
-    "dts-gen": "^0.10.1",
-    "react": "^17.0.0 || ^18.0.0",
-    "tslib": "^2.6.2"
+    "react": "^17.0.0 || ^18.0.0"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.24.3",
