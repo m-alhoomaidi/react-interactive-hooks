@@ -17,3 +17,5 @@ export const throttle = (func: (...args: any[]) => void, limit: number): ((...ar
         }
     };
 };
+
+
