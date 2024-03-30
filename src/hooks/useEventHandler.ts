@@ -1,9 +1,10 @@
-import { useCallback } from 'react';
+import React, { useCallback } from 'react';
 import { debounce, throttle } from '../utils';
 
 export interface UseEventHandlerOptions {
     debounceDelay?: number;
     throttleInterval?: number;
+    ref?: React.RefObject<Document>
 }
 
 /**
@@ -21,17 +22,19 @@ export const useEventHandler = (eventName: string) => {
      * @param options - Configuration options for debouncing or throttling.
      * @returns Cleanup function to unregister the event handler.
      */
-    return useCallback((eventCallback: (event: Event) => void, { debounceDelay, throttleInterval }: UseEventHandlerOptions = {}): (() => void) => {
+    return useCallback((eventCallback: (event: Event) => void, { debounceDelay, throttleInterval, ref }: UseEventHandlerOptions = {}): (() => void) => {
         let eventHandler: (event: Event) => void = eventCallback;
-
+        let target = document;
         if (typeof debounceDelay === 'number') {
             eventHandler = debounce(eventCallback, debounceDelay);
         } else if (typeof throttleInterval === 'number') {
             eventHandler = throttle(eventCallback, throttleInterval);
         }
+        if (ref && ref.current) {
+            target = ref.current;
+        }
+        target.addEventListener(eventName, eventHandler);
 
-        document.addEventListener(eventName, eventHandler);
-
-        return () => document.removeEventListener(eventName, eventHandler);
+        return () => target.removeEventListener(eventName, eventHandler);
     }, [eventName]);
 };

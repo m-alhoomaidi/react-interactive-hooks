@@ -103,3 +103,7 @@ export const useOnPointerUp = () => {
 export const useOnPointerCancel = () => {
     return useEventHandler('pointercancel');
 };
+
+export const useOnChange = () => {
+    return useEventHandler('change');
+};
